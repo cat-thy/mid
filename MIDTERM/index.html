@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appreciate Living</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+
+    
+</head>
+<body>
+    <header>
+        <h1>A <span class="blue">Beacon</span> of Hope</h1>
+    </header>
+    
+    <div class="contain">
+
+
+        <div>
+            <p class="p1">Would it matter, if I were to tell you, how precious your life is?</p> 
+        </div>
+           
+
+            <div>
+                <img src="pics/1.jpg" alt="" class="img1">
+               
+                <p class="caption">That no matter how <span class="red">complicated </span>it is</p>
+            </div>
+
+            
+
+            <div>
+                <img src="pics/2.jpg" alt="" class="img2">
+                <p class="caption">its value can't be measured</p>
+            </div>
+        
+            <div>
+                <img src="pics/4.jpg" alt="" class="img3">
+                <p >we may tend to forget,</p>
+                <p class="p5">so may this remind us</p>
+            </div>
+
+
+            <div>
+                <img src="pics/5.jpg" alt="" class="img4">
+                
+            <p class="p6">The other side of life.</p>
+            </div>
+
+
+            <div>
+                <img src="pics/6.jpg" alt="" class="img5">
+              
+            </div>
+    </div>
+    
+   
+   <img src="" alt="">
+    <button class="drawer-icon" onclick="openDrawer()">Donate</button>
+
+
+    <div class="drawer" id="drawer">
+        <button class="close-btn" onclick="closeDrawer()">X</button>
+        <form action="payment.html">
+            <h2>Help <span class="red">Save</span> a Life today!</h2>
+            <div class="content">
+
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Enter your Name" required>
+
+                <label for="lname"></label>
+                <input type="text" id="lname"  placeholder="Enter your Last Name" required>
+                
+                <label for="email"></label>
+                <input type="text" id="email"  placeholder="Email Address" required>
+                
+
+                <label for="phone"></label>
+                <input type="text" id="phone" pattern="[0-9]*" placeholder="Enter your Phone Number" maxlength="11" minlength="11"  required>
+
+                <label for="address"></label>
+                <input type="text" id="address" placeholder="Address" required>
+
+                <label for="city"></label>
+                <input type="text" id="city"  placeholder="City"  required>
+
+                <label for="zip"></label>
+                <input type="text" id="zip"  placeholder="Zip Code" pattern="[0-9]*" maxlength="4" minlength="4" required>
+
+                
+
+
+                <h3>Mode of payment: </h3>
+                <div class="payment">
+                
+                <label for="gcash">Gcash:</label>
+                <input type="radio" id="gcash" name="pay">
+
+                <label for="bpi">BPI:</label>
+                <input type="radio" id="bpi"  name="pay" required>
+
+                <label for="paymaya">Pay Maya:</label>
+                <input type="radio" id="paymaya" name="pay">
+                </div>
+                
+            </div>
+            <button class="sub">Submit</button>
+        </form>
+    </div>
+
+
+    
+
+</body>
+</html>

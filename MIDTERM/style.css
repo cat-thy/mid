@@ -1,0 +1,259 @@
+
+
+
+      input
+      {
+        padding: 8px;
+        border: 1px solid #ccc;
+        margin-bottom: 30px;
+      }
+
+      .content
+      {
+        margin-bottom: 50px;
+        display: flex ;
+        flex-direction: column;
+      }
+
+
+     
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        height: 100vh;  
+        flex-direction: column; 
+        background-color: palevioletred;
+      }
+
+
+      
+
+      .drawer {
+        position: fixed;
+        top: 0;
+        left: -350px; 
+        width: 330px;
+        height: 100%;
+        background: white;
+        transition: left 0.4s ease-in-out, opacity 0.4s ease-in-out;
+        padding: 20px;
+        overflow-y: scroll;
+        opacity: 0;
+        z-index: 1000;
+      }
+
+
+      .drawer.open {
+        left: 0;
+        opacity: 1;
+      }
+
+
+      .close-btn {
+        background: white;
+        color: black;
+        border: black;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-left: 280px;
+      }
+
+
+      .drawer-icon {
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        position: fixed;
+        top: 15px;
+        left: 25px;
+        background: none;
+        border: none;
+        font-family: 'Titillium Web', sans-serif;
+        color: white;
+      }
+
+      .drawer-icon:hover
+      {
+        color: pink;
+        transition: .5s ease-in-out;
+      }
+
+      .drawer-icon::after
+      {
+        content: "";
+        position: absolute;
+        background-color: palevioletred;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -1px;
+      }
+      
+      .drawer-icon:hover::after
+      {
+        width: 100%;
+        transition: .3s ease-in-out;
+      }
+
+      h2{
+        margin-bottom: 50px;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 40px;
+        margin-left: 10px;
+      }
+
+      .red
+      {
+        color: red;
+        font-weight: bold;
+      }
+
+      .blue
+      {
+        color: lightskyblue;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: palevioletred;
+      }
+      label
+      {
+      font-family: 'Titillium Web', sans-serif;
+      }
+
+      .sub
+      {
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin-left: 29%;
+        width: 120px;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: solid black 2px;
+        border-radius: 15px;
+      }
+
+      .sub:hover, .btn:focus, .btn:active
+      {
+        background-color: white;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        transform: translateY(-2px);
+        transition: .2s ease-in-out;
+      }
+
+      .hidden {
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+      }
+
+      .payment
+      {
+        display: flex;
+        justify-content: space-between;
+        gap: 2px;
+      }
+
+      .payment input
+      {
+          width: 17px; 
+          height: 17px;
+          border: 2px solid black; 
+          border-radius: 50%; 
+          outline: none;
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          
+      }
+
+
+  
+.contain {
+  position: absolute;
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+  justify-content: center; 
+  gap: 5px;
+  margin-top: 260%; 
+  flex-wrap: wrap;
+}
+
+
+img {
+  display: block;
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+}
+
+
+
+header {
+  margin-top: 50px;
+  position: absolute;
+  margin-bottom: 500px;
+  left: 3%;
+  font-family: 'Bebas Neue', sans-serif;
+  color: palevioletred; 
+  z-index: 1; 
+  font-size: 30px;
+  align-items: flex-start;
+}
+
+
+
+
+h1
+{
+  font-size: 60px;
+}      
+
+h3
+{
+  font-weight: normal;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+p
+{
+  margin-top: 500px;
+  margin-left: 40px;
+  position: absolute;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 40px;
+  color: white; 
+  z-index: 2; 
+  font-size: 50px;
+  margin-right: 500px;
+} 
+
+
+
+
+.img4
+{ 
+  width: 100vw;
+}
+
+.img6
+{
+  width: 100vw;
+}
+
+.p5
+{
+  margin-top: 41%;
+}
+
+
+.p6
+{
+  margin-top: 550px;
+  margin-left: 230px;
+}
